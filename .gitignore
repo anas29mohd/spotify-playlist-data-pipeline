@@ -1,0 +1,7 @@
+# Ignore Airflow Logs and temporary
+files
+loges/
+plugins/
+__pycache__/
+*.db
+.env
