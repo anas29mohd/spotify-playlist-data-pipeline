@@ -1,0 +1,30 @@
+{"timestamp":"2026-03-08T12:04:43.608022Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-08T12:04:43.610359Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/spotify_pipeline_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-08T12:04:43.643055Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-08T12:04:43.643418Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-08T12:04:43.643873Z","level":"info","event":"Current task name:transform_playlist_data","logger":"task.stdout"}
+{"timestamp":"2026-03-08T12:04:43.644093Z","level":"info","event":"Dag name:spotify_playlist_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-08T12:04:44.169453Z","level":"error","event":"Traceback (most recent call last):","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.170024Z","level":"error","event":"  File \"/opt/airflow/scripts/transform_playlist.py\", line 3, in <module>","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.174752Z","level":"error","event":"    df = pd.read_csv(\"/opt/airflow/output/playlist_raw.csv\")","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.175631Z","level":"error","event":"         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.176213Z","level":"error","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1026, in read_csv","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.176833Z","level":"error","event":"    return _read(filepath_or_buffer, kwds)","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.177520Z","level":"error","event":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.178238Z","level":"error","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 620, in _read","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.178921Z","level":"error","event":"    parser = TextFileReader(filepath_or_buffer, **kwds)","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.179792Z","level":"error","event":"             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.180601Z","level":"error","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1620, in __init__","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.181303Z","level":"error","event":"    self._engine = self._make_engine(f, self.engine)","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.181736Z","level":"error","event":"                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.182167Z","level":"error","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py\", line 1880, in _make_engine","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.182743Z","level":"error","event":"    self.handles = get_handle(","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.183356Z","level":"error","event":"                   ^^^^^^^^^^^","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.183860Z","level":"error","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py\", line 873, in get_handle","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.184395Z","level":"error","event":"    handle = open(","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.184912Z","level":"error","event":"             ^^^^^","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.185380Z","level":"error","event":"FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/output/playlist_raw.csv'","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:44.234993Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-08T12:04:44.254387Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-08T12:04:44.255004Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-08T12:04:44.255577Z","level":"info","event":"Task operator:<Task(PythonOperator): transform_playlist_data>","logger":"task.stdout"}

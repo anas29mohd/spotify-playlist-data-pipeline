@@ -1,0 +1,33 @@
+{"timestamp":"2026-03-08T12:04:42.191476Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-08T12:04:42.194923Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/spotify_pipeline_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-08T12:04:42.248164Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-08T12:04:42.248680Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-08T12:04:42.249491Z","level":"info","event":"Current task name:extract_playlist_data","logger":"task.stdout"}
+{"timestamp":"2026-03-08T12:04:42.249973Z","level":"info","event":"Dag name:spotify_playlist_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-08T12:04:43.009816Z","level":"error","event":"Traceback (most recent call last):","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.011470Z","level":"error","event":"  File \"/opt/airflow/scripts/spotify_playlist.py\", line 1, in <module>","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.019771Z","level":"error","event":"    from airflow import DAG","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.020821Z","level":"error","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/airflow/__init__.py\", line 79, in <module>","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.021723Z","level":"error","event":"    settings.initialize()","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.022778Z","level":"error","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py\", line 708, in initialize","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.023659Z","level":"error","event":"    configure_orm()","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.024395Z","level":"error","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py\", line 404, in configure_orm","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.025147Z","level":"error","event":"    engine = create_engine(","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.025952Z","level":"error","event":"             ^^^^^^^^^^^^^^","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.026921Z","level":"error","event":"  File \"<string>\", line 2, in create_engine","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.027354Z","level":"error","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/deprecations.py\", line 281, in warned","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.028027Z","level":"error","event":"    return fn(*args, **kwargs)  # type: ignore[no-any-return]","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.029454Z","level":"error","event":"           ^^^^^^^^^^^^^^^^^^^","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.029880Z","level":"error","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py\", line 564, in create_engine","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.030346Z","level":"error","event":"    u = _url.make_url(url)","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.030815Z","level":"error","event":"        ^^^^^^^^^^^^^^^^^^","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.031345Z","level":"error","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/url.py\", line 856, in make_url","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.032041Z","level":"error","event":"    return _parse_url(name_or_url)","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.033018Z","level":"error","event":"           ^^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.033478Z","level":"error","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/url.py\", line 922, in _parse_url","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.036389Z","level":"error","event":"    raise exc.ArgumentError(","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.037366Z","level":"error","event":"sqlalchemy.exc.ArgumentError: Could not parse SQLAlchemy URL from given URL string","logger":"task.stderr"}
+{"timestamp":"2026-03-08T12:04:43.136469Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-08T12:04:43.155742Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-08T12:04:43.156085Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-08T12:04:43.156401Z","level":"info","event":"Task operator:<Task(PythonOperator): extract_playlist_data>","logger":"task.stdout"}

@@ -1,0 +1,18 @@
+{"timestamp":"2026-03-08T17:49:05.771276Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-08T17:49:05.775939Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/spotify_pipeline_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-08T17:49:05.806026Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-08T17:49:05.806384Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-08T17:49:05.806871Z","level":"info","event":"Current task name:run_spotify_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-08T17:49:05.807078Z","level":"info","event":"Dag name:spotify_playlist_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-08T17:49:06.932689Z","level":"info","event":"Spotify ETL Pipeline Started","logger":"task.stdout"}
+{"timestamp":"2026-03-08T17:49:06.933657Z","level":"info","event":"Starting extraction...","logger":"task.stdout"}
+{"timestamp":"2026-03-08T17:49:06.934393Z","level":"info","event":"Raw playlist data saved to playlist_raw.csv","logger":"task.stdout"}
+{"timestamp":"2026-03-08T17:49:06.934958Z","level":"info","event":"Starting transformation...","logger":"task.stdout"}
+{"timestamp":"2026-03-08T17:49:06.935524Z","level":"info","event":"Transformation completed","logger":"task.stdout"}
+{"timestamp":"2026-03-08T17:49:06.935948Z","level":"info","event":"Saving transformed dataset...","logger":"task.stdout"}
+{"timestamp":"2026-03-08T17:49:06.936411Z","level":"info","event":"Transformed dataset saved to playlist_transformed.csv","logger":"task.stdout"}
+{"timestamp":"2026-03-08T17:49:06.936805Z","level":"info","event":"Spotify ETL Pipeline Completed","logger":"task.stdout"}
+{"timestamp":"2026-03-08T17:49:06.994328Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-08T17:49:07.015370Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-08T17:49:07.015703Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-08T17:49:07.016039Z","level":"info","event":"Task operator:<Task(PythonOperator): run_spotify_pipeline>","logger":"task.stdout"}
