@@ -156,3 +156,5 @@
 {"timestamp":"2026-03-08T18:04:22.474204Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/spotify_pipeline_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
 {"timestamp":"2026-03-08T18:04:52.993502Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/spotify_pipeline_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
 {"timestamp":"2026-03-08T18:05:23.673712Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/spotify_pipeline_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-08T18:05:54.258634Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/spotify_pipeline_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-08T18:06:24.756563Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/spotify_pipeline_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
